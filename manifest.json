@@ -9,7 +9,7 @@
     "default_title": "Scholarship websites",
     "default_popup": "popup.html"
   },
-  "permissions": ["webNavigation"],
+  "permissions": [],
   "background": {
     "scripts": [ "background.js" ]
   },
