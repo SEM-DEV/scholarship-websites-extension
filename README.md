@@ -1,4 +1,4 @@
-# scholarship websites#
+# scholarship websites
 
 ## What it does ##
 
