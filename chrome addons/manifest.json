@@ -1,0 +1,11 @@
+{
+  "name" : "scholarship websites ",
+  "version" : "0.1.0",
+  "description" : "A popup counains a websites post scholarships",
+  
+  "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
