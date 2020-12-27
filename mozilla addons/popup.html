@@ -1,73 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 <style>
-.vertical-menu {
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
   
-   width: 300px;
-  height: 300px;
+  color: #aab0b8;
+  background-color: #0d1117;
+  width: 100%;
+  font-size: 15px;
+  padding: 12px;
+  border: 1px solid #161b22;
+  margin-bottom: 12px;
+  border-radius: 7px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #0d1117;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #0d1117;
+  padding: 12px;
+  text-decoration: none;
+  border: 1px solid #161b22;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #aab0b8;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #161b22;
+}
+.vertical-menu {
+   background-color: #161b22;
+   width: 270px;
+height: 250px;
   overflow-y: scroll;
+  border: 1px solid #0d1117;
+  border-radius: 5px;
 
 }
 
 .vertical-menu a {
-  background-color: #eee;
+  background-color: #161b22;
   color: black;
   display: block;
   padding: 9px;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc;
+  background-color: #161b22;
 }
 
 .vertical-menu a.active {
   background-color: #4CAF50;
   color: white;
 }
-.dropbt5 {
-    background: url(icons/icon-32.png) center no-repeat;
-  
-    outline: none;
-    
-    border: none;
-    
-	position: fixed;
-    height: 65px;
-	width: 65px;
-	
-	top: 10px;
-	right: 10px;
+.git{
+color:#549ef5;
+}
+.git:link {
+  text-decoration: none;
+}
+
+.git:visited {
+  text-decoration: none;
+}
+
+.git:hover {
+  text-decoration: underline;
+}
+
+.git:active {
+  text-decoration: underline;
 }
 </style>
 </head>
-<body style="background-color: #eee;">
+<body style="background-color: #161b22;">
 
-<h4>List of websites post scholarships</h3>
-<h5>Scroll down to see more websites</h5>
-<hr>
+<h3 style="color: #aab0b8;text-align: center">Scholarship websites</h3>
+
+<input type="text" id="myInput"  placeholder="Search for websites.." title="Type in a name">
 <div class="vertical-menu">
-  <button id="gohome" class="dropbt5" onclick="funfun()"></button>
-  <a href="https://www.for9a.com/" target="_blank" >Forsa</a>
-  <a href="https://mina7.net/" target="_blank" >mina7</a>
-  <a href="https://www.marj3.com/en" target="_blank" >marj3</a>
-  <a href="http://www.mladiinfo.eu/" target="_blank" >mladiinfo</a>
-  <a href="https://opportunitydesk.org/" target="_blank" >opportunity desk</a>
-  <a href="https://armacad.info/" target="_blank" >armacad</a>
-  <a href="https://www.heysuccess.com/" target="_blank" >heysuccess</a>
-  <a href="https://www.opportunitiesforafricans.com/" target="_blank" >opportunities for africans</a>
-  <a href="https://www.youthop.com/" target="_blank" >youthop</a>
-  <a href="https://oyaop.com/" target="_blank" >oyaop</a>
-  <a href="https://scholarship-positions.com/" target="_blank" >scholarship-positions</a>
-
+<ul id="myUL">
+  <li><a href="https://academicpositions.com/">Academic positions</a></li>
+  <li><a href="https://www.advance-africa.com/">Advance Africa</a></li>
+  <li><a href="https://www.afterschoolafrica.com/">After School Africa</a></li>
+  <li><a href="https://armacad.info/">ARMACAD</a></li>
+  <li><a href="https://www.for9a.com/">For9a/فرصة</a></li>
+  <li><a href="https://www.heysuccess.com/">HeySuccess</a></li>
+  <li><a href="https://www.internationalscholarships.com/">International Scholarships</a></li>
+  <li><a href="https://www.marj3.com/">Marj3/مرجع</a></li>
+  <li><a href="https://mina7.net/">Mina7/منحة</a></li>
+  <li><a href="http://www.mladiinfo.eu/">MladI!nfo</a></li>
+  <li><a href="https://www.opportunitiesforafricans.com/">Opportunities for Africans</a></li>
+  <li><a href="https://www.opportunitiesforyouth.org/">Opportunities for Youth</a></li>
+  <li><a href="https://opportunitydesk.org/">Opportunity Desk</a></li>
+  <li><a href="https://oyaop.com/">OYA Opportunities</a></li>
+  <li><a href="https://www.scholars4dev.com/">Scholars4dev</a></li>
+  <li><a href="https://scholarship-positions.com/">Scholarship positions</a></li>
+  <li><a href="https://www.scholarships.com/">Scholarships</a></li>
+  <li><a href="https://www.scholarshipscanada.com/">Scholarships Canada</a></li>
+  <li><a href="https://www.youthop.com/">Youth Opportunities</a></li>
+  
+  
+ 
+</ul>
 </div>
 <hr>
-<a href="https://github.com/SEM-DEV/mozillaaddons-scholarship" target="_blank" >GitHub repository</a>
+<a class="git" href="https://github.com/SEM-DEV/scholarship-websites-extension" target="_blank" >GitHub repository</a>
+<script src="popup.js"></script>
+
 </body>
-
 </html>
-
