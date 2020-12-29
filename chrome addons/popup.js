@@ -22,5 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       }
   }
-  
+  window.onload = function() {
+  var input = document.getElementById("myInput").focus();
+}
   
