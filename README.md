@@ -4,8 +4,8 @@
 
 The extension includes:
 
-* A list of the popular websites post scholarships.
-* this extension works for cross platform (mozilla, chrome and edge).
+* A list of the popular websites that post scholarships
+* This extension works cross-platform (Mozilla, Chrome, and Edge).
 
 [Get it from mozilla](https://addons.mozilla.org/en-US/firefox/addon/scholarship-websites/)
 
