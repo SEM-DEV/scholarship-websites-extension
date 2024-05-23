@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Scholarship websites",
-  "version": "0.4.0",
-  "browser_action": {
+  "version": "0.5.0",
+  "action": {
     "default_icon": {
       "32": "icons/icon-32.png"
     },
@@ -10,9 +10,6 @@
     "default_popup": "popup.html"
   },
   "permissions": [],
-  "background": {
-    "scripts": [ "background.js" ]
-  },
   "icons": {
     "32": "icons/icon-32.png"
   },
